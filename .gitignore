@@ -1,12 +1,6 @@
 .DS_Store
-node_modules/
+node_modules
 /dist
-.nyc_output/
-coverage/
-package-lock.json
-
-/tests/e2e/videos/
-/tests/e2e/screenshots/
 
 # local env files
 .env.local
@@ -24,9 +18,4 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-*.sw*
-
-# functions ignore
-functions/node_modules/
-functions/package-lock.json
-functions/etc
+*.sw?
