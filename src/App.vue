@@ -1,14 +1,8 @@
 <template>
 <div id="app">
-  <div id="nav">
-    <router-link to="/about">About</router-link> |
-    <router-link to="/menu">Menu</router-link>
-  </div>
   <router-view />
 </div>
 </template>
-
-
 
 <script>
 
@@ -55,26 +49,56 @@ table {
   display: inline;
 }
 
-.tamaño {
-  display: flex;
-  align-self: flex-start;
-}
 
-.menu_img {
-  height: inherit;
-  width: inherit;
-}
+.button_img {
+    height: inherit;
+    width: inherit;
+  }
 
+  .complemets {
+    display: inline;
+  }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-}
+  .fries{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
 
-.vegetables {
-  display: flex;
-  align-self: flex-end;
-}
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-complements {
+    display: inline;
+  }
+
+  .tamaño {
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 5%;
+    justify-content: center;
+  }
+
+  .tiket {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .tiket-libreta {
+    margin: 2%;
+    height: 45%;
+    width: 22%;
+  }
+
+  .vegetables {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -84,5 +108,4 @@ table {
   color: black;
   margin-top: 60px;
 }
-
 </style>

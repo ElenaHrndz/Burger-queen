@@ -2,72 +2,54 @@
 <div class="Code" id="code">
 
   <input type="password" name="codigo-de-empleado" value="">
-  <!-- <h1>hola {{ number }}</h1> -->
+
   <table>
-    <tr>
-      <td><button type="button" name="button" id="1"><img alt="Vue logo" src="../assets/code-burger.png">
-          <h2>1</h2>
-        </button></td>
-      <td><button type="button" name="button" id="2"><img alt="Vue logo" src="../assets/code-burger.png">
-          <h2>2</h2>
-        </button></td>
-      <td><button type="button" name="button" id="3"><img alt="Vue logo" src="../assets/code-burger.png">
-          <h2>3</h2>
-        </button></td>
+  <router-link to="/menu"><tr>
+      <td><button type="button" name="button" v-on:click="typeNumber(1)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>1</h2></button></td>
+      <td><button type="button" name="button" v-on:click="typeNumber(2)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>2</h2></button></td>
+      <td><button type="button" name="button" v-on:click="typeNumber(3)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>3</h2></button></td>
     </tr>
     <tr>
-      <td><button type="button" name="button" id="4"><img alt="Vue logo" src="../assets/code-burger.png">
-          <h2>4</h2>
-        </button></td>
-      <td><button type="button" name="button" id="5"><img alt="Vue logo" src="../assets/code-burger.png">
-          <h2>5</h2>
-        </button></td>
-      <td><button type="button" name="button" id="6"><img alt="Vue logo" src="../assets/code-burger.png">
-          <h2>6</h2>
-        </button></td>
+      <td><button type="button" name="button" v-on:click="typeNumber(4)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>4</h2></button></td>
+      <td><button type="button" name="button" v-on:click="typeNumber(5)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>5</h2></button></td>
+      <td><button type="button" name="button" v-on:click="typeNumber(6)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>6</h2></button></td>
     </tr>
     <tr>
-      <td><button type="button" name="button" id="7"><img alt="Vue logo" src="../assets/code-burger.png">
-          <h2>7</h2>
-        </button></td>
-      <td><button type="button" name="button" id="8"><img alt="Vue logo" src="../assets/code-burger.png">
-          <h2>8</h2>
-        </button></td>
-      <td><button type="button" name="button" id="9"><img alt="Vue logo" src="../assets/code-burger.png">
-          <h2>9</h2>
-        </button></td>
+      <td><button type="button" name="button" v-on:click="typeNumber(8)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>7</h2></button></td>
+      <td><button type="button" name="button" v-on:click="typeNumber(8)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>8</h2></button></td>
+      <td><button type="button" name="button" v-on:click="typeNumber(9)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>9</h2></button></td>
     </tr>
     <tr>
       <td></td>
-      <td><button type="button" name="button" id="0" @click="typeNumber(0)"><img alt="Vue logo" src="../assets/code-burger.png">
+      <td><button type="button" name="button" v-on:click="typeNumber(0)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png">
           <h2>0</h2>
         </button></td>
       <td></td>
-    </tr>
+    </tr></router-link>
   </table>
 
 </div>
 </template>
 
 <script>
-
-// export default {
-//   name: "Code",
-//   data: {
-//     number: 0
-//   },
-//   methods: {
-//     typeNumber() {
-//       this.number++
-//       // alert(pass);
-//     }
-//   }
-// }
+var pass = "Empleado";
+  export default{
+    name: "Code",
+    methods:{
+      typeNumber: function(number){
+        pass += number;
+        alert(pass);
+      }
+    }
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 div {
   display: inline-grid;
 }
+
+
 </style>
