@@ -1,19 +1,13 @@
 <template>
 <div class="menu">
   <div class="main">
-    <button type="button" name="button"><img class="menu_img" src="../assets/beef_burger.png" alt="burger"> </button>
+    <router-link to="/complements"><button type="button" name="button"><img class="menu_img" src="../assets/beef_burger.png" alt="burger"></button>
     <button type="button" name="button"><img class="menu_img" src="../assets/chicken_burger.png" alt="onion_rings"></button>
     <button type="button" name="button"><img class="menu_img" src="../assets/veggie_burger.png" alt="french_friesr"></button>
-    <button type="button" name="button"><img class="menu_img" src="../assets/sandwich.png" alt="sandwich"></button>
+    <button type="button" name="button"><img class="menu_img" src="../assets/sandwich.png" alt="sandwich"></button></router-link>
+      <router-link to="/complements"></router-link>
   </div>
 
-  <div class="vegetables">
-    <button type="button" name="button"><img class="menu_img" src="../assets/onion.png" alt="soda"></button>
-    <button type="button" name="button"><img class="menu_img" src="../assets/tomatoe.png" alt="wather"></button>
-    <button type="button" name="button"><img class="menu_img" src="../assets/lettuce.png" alt="soda"></button>
-    <button type="button" name="button"><img class="menu_img" src="../assets/pepper.png" alt="wather"></button>
-  </div>
-  
   <div class="complemets">
     <button type="button" name="button"><img class="menu_img" src="../assets/french_fries.png" alt="french_friesr"></button>
     <button type="button" name="button"><img class="menu_img" src="../assets/onion_rings.png" alt="onion_rings"></button>
@@ -42,8 +36,8 @@ export default {
 <style scoped>
 button {
   background-color: transparent;
-  height: 120px;
-  width: 120px;
+  width: 111px;
+  height: 90px;
   padding: 0;
 }
 
