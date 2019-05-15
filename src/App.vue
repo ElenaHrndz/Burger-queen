@@ -5,6 +5,31 @@
 </template>
 
 <script>
+export default {
+  name: 'App'
+}
+//
+//
+// import { db } from './main'
+//
+// export default {
+//   name: 'App',
+//   data () {
+//     return {
+//       client: ''
+//     }
+//   },
+//   firestore () {
+//     return {
+//       locations: db.collection('orders')
+//     }
+//     },
+//   methods: {
+//     setClient(client){
+//       db.collection('orders').add({client})
+//     }
+//   }
+// }
 
 </script>
 
@@ -92,6 +117,7 @@ table {
     margin: 2%;
     height: 45%;
     width: 22%;
+    position: fixed;
   }
 
   .vegetables {

@@ -15,15 +15,13 @@
       <td><button type="button" name="button" v-on:click="typeNumber(6)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>6</h2></button></td>
     </tr>
     <tr>
-      <td><button type="button" name="button" v-on:click="typeNumber(8)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>7</h2></button></td>
+      <td><button type="button" name="button" v-on:click="typeNumber(7)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>7</h2></button></td>
       <td><button type="button" name="button" v-on:click="typeNumber(8)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>8</h2></button></td>
       <td><button type="button" name="button" v-on:click="typeNumber(9)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>9</h2></button></td>
     </tr>
     <tr>
       <td></td>
-      <td><button type="button" name="button" v-on:click="typeNumber(0)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png">
-          <h2>0</h2>
-        </button></td>
+      <td><button type="button" name="button" v-on:click="typeNumber(0)"><img class="button_img" alt="Vue logo" src="../assets/code-burger.png"><h2>0</h2></button></td>
       <td></td>
     </tr></router-link>
   </table>
