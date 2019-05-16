@@ -1,5 +1,11 @@
 # burger-queen
 
+[Figma](https://www.figma.com/file/4SaLCwe5lvRgL3sE1FNjv1/Burger-Queen-Copy)
+
+[Video](https://photos.google.com/share/AF1QipPVGrQ0g3RV_ohcrFS5mnvvfdjQVOYnqV47ouW-4mxJML__JMvX_0G-KZUnIMnbMw/photo/AF1QipMH0Ut3kpEHvyBQNl4ffs0g_BMxbEuDTm5rWJxR?key=WndhZ011NkhfOHBiOHFocndYUlpsdWpyUkkyNEVB)
+
+[Burger Queen](https://burger-queen-661d6.firebaseapp.com/)
+
 ## Project setup
 ```
 npm install
