@@ -43,10 +43,7 @@ body {
 
 button {
   background-color: transparent;
-  width: 111px;
-  height: 90px;
-  padding: 0;
-  background-color: transparent;
+  border:none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,9 +57,9 @@ h2 {
 
 
 h3 {
-  font-size: 1.7em;
+  font-size: 1.35em;
   margin: 0;
-  background-color: maroon;
+  background-color: wheat;
 }
 
 input {
@@ -114,10 +111,9 @@ table {
   }
 
   .tiket-libreta {
-    margin: 2%;
+    margin: 2% -1% 0 0;
     height: 45%;
-    width: 22%;
-    position: fixed;
+    position: absolute;
   }
 
   .vegetables {
