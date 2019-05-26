@@ -8,32 +8,15 @@
 export default {
   name: 'App'
 }
-//
-//
-// import { db } from './main'
-//
-// export default {
-//   name: 'App',
-//   data () {
-//     return {
-//       client: ''
-//     }
-//   },
-//   firestore () {
-//     return {
-//       locations: db.collection('orders')
-//     }
-//     },
-//   methods: {
-//     setClient(client){
-//       db.collection('orders').add({client})
-//     }
-//   }
-// }
 
 </script>
 
 <style>
+
+a{
+  text-decoration: none;
+}
+
 body {
   background-image: url("./assets/background.png");
   background-attachment: fixed;
@@ -42,11 +25,11 @@ body {
 }
 
 button {
-  background-color: transparent;
+
+  background-color: wheat;
   border:none;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 h2 {
@@ -59,7 +42,7 @@ h2 {
 h3 {
   font-size: 1.35em;
   margin: 0;
-  background-color: wheat;
+  /* background-color: wheat; */
 }
 
 input {
@@ -96,7 +79,7 @@ table {
     display: inline;
   }
 
-  .tamaño {
+  .size {
     display: flex;
     align-self: flex-start;
     margin-bottom: 5%;
