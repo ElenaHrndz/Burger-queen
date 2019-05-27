@@ -2,7 +2,7 @@
 
 [Figma](https://www.figma.com/file/4SaLCwe5lvRgL3sE1FNjv1/Burger-Queen-Copy)
 
-[Video](https://photos.google.com/album/AF1QipOCuKrjsO91Hl1MzfideZnuT5s8hPMCw9o5midE/photo/AF1QipPEnjATnkbTWpY211MdjHZ1KlVBy623RffS7Xr8)
+[Video](https://photos.app.goo.gl/tYSHw3bcdrTHs7oJ8)
 
 [Burger Queen](https://burger-queen-661d6.firebaseapp.com/)
 
