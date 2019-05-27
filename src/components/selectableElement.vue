@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <label for="beef_burger"><input type="checkbox" v-on:click="{functionToDo}" v-bind:id="idData"><img class="button_img" :src=imageDir :alt="altData"></label>
 </template>
 
@@ -44,4 +44,4 @@ label {
 .nombre {
   display: flex;
 }
-</style>
+</style> -->

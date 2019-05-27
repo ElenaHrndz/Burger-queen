@@ -64,9 +64,9 @@ export default {
   },
     deletOrder(doc){
       db.collection("orders").doc(doc).delete().then(() => {
-        console.log("borrado");
+        // console.log("borrado");
       }).catch((err) => {
-        console.log("error");
+        // console.log("error");
       });
       this.watcher();
     },

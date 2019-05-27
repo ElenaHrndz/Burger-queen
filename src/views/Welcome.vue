@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <form @submit="addClient(client)">
       <h4>Nuevo Cliente</h4>
@@ -15,7 +15,7 @@
         <li><maleselectelement v-bind:imageDir="proteins.imageDir" altData=""></maleselectelement></li>
         <!-- <a v-bind:href="imageDir"></a> -->
           <!-- <label for="beef_burger"><input type="checkbox" v-on:click="{functionToDo}" v-bind:id="idData"><img class="button_img" :src=imageDir :alt="altData"></label> -->
-      </ul>
+      <!-- </ul>
     </div>
 
         <div class="beverage">
@@ -80,8 +80,8 @@
   }
   </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<!-- Add "scoped" attribute to limit CSS to this component only 
+/* <style scoped>
 
 input, button {
   margin-bottom: 10px;
@@ -90,4 +90,4 @@ input, button {
 input{
   display: block;
 }
-</style>
+</style>*/-->
