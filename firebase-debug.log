@@ -1,0 +1,21 @@
+[debug] [2019-05-27T05:11:52.627Z] ----------------------------------------------------------------------
+[debug] [2019-05-27T05:11:52.630Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\maggi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-05-27T05:11:52.630Z] CLI Version:   6.8.0
+[debug] [2019-05-27T05:11:52.630Z] Platform:      win32
+[debug] [2019-05-27T05:11:52.630Z] Node Version:  v11.12.0
+[debug] [2019-05-27T05:11:52.633Z] Time:          Mon May 27 2019 00:11:52 GMT-0500 (GMT-05:00)
+[debug] [2019-05-27T05:11:52.633Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-27T05:11:52.660Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-27T05:11:52.661Z] > authorizing via signed-in user
+[debug] [2019-05-27T05:11:52.662Z] [iam] checking project burger-queen-661d6 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-05-27T05:11:52.664Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-05-27T05:11:52.664Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-05-27T05:11:52.891Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-27T05:11:52.910Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/burger-queen-661d6:testIamPermissions  
+
+[debug] [2019-05-27T05:11:53.287Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-27T05:11:53.290Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/burger-queen-661d6  
+ 
+[debug] [2019-05-27T05:11:53.602Z] <<< HTTP RESPONSE 200
