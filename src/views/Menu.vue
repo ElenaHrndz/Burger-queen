@@ -63,15 +63,15 @@ Ingredients();
 
 function calculatePrice(order) {
   let price = 0;
-  if(order.beverage != null){
+  if(order.beverage != ''){
     price += ingredients.beverage.find((item) => { if(item.name === order.beverage){return item}}).price;
   }
-  if(order.complement != null){
+  if(order.complement != ''){
     price += ingredients.complements.find((item) => { if(item.name === order.complement){return item}}).price;
   }
-  if(order.mainDish.protein != null){
+  if(order.mainDish.protein != ''){
     price += ingredients.protein.find((item) => { if(item.name === order.mainDish.protein){return item}}).price;
-    if(order.mainDish.bread != null){
+    if(order.mainDish.bread != ''){
       price += ingredients.bread.find((item) => { if(item.name === order.mainDish.bread){return item}}).price;
     }
   }
@@ -85,7 +85,7 @@ export default {
     return {
       currentOrder: 0,
       orders: [],
-      order: null,
+      order: '',
       mainDish: {
         protein: false,
         size: null
@@ -121,11 +121,12 @@ export default {
         } else {
           if (this.orders[this.currentOrder].mainDish.protein === proteinToSet) {
             if(this.orders[this.currentOrder].beverage === '' && this.orders[this.currentOrder].complement === '' ){
-              this.orders.splice(this.orders[this.currentOrder]);
+              this.orders.splice(this.orders[this.currentOrder], 1);
               this.mainDish.protein = false;
+              this.mainDish.size = null;
             }
             else {
-              this.orders[this.currentOrder].mainDish.protein = null;
+              this.orders[this.currentOrder].mainDish.protein = '';
               this.mainDish.protein = false;
               calculatePrice(this.orders[this.currentOrder]);
             }
@@ -138,10 +139,10 @@ export default {
       }
       else {
         let order = {
-          beverage: null,
-          complement: null,
+          beverage: '',
+          complement: '',
           mainDish: {
-            bread: null,
+            bread: '',
             protein: proteinToSet,
             vegetables: ['onion', 'tomato', 'lettuce', 'pepper'],
             extras: '',
@@ -150,7 +151,6 @@ export default {
         }
         this.orders.push(order);
         this.mainDish.protein = true;
-        // this.orders.then(()=> this.order='');
         calculatePrice(this.orders[this.currentOrder]);
       }
     },
@@ -166,10 +166,10 @@ export default {
       if(this.orders[this.currentOrder]){
         if(this.orders[this.currentOrder].beverage === kindOfBeverage){
             if(this.orders[this.currentOrder].mainDish.protein === '' && this.orders[this.currentOrder].complement === ''){
-              this.orders.splice(this.orders[this.currentOrder]);
+              this.orders.splice(this.orders[this.currentOrder], 1);
             }
             else {
-              this.orders[this.currentOrder].beverage = null;
+              this.orders[this.currentOrder].beverage = '';
               calculatePrice(this.orders[this.currentOrder]);
             }
         }
@@ -181,10 +181,10 @@ export default {
       else {
         let order = {
           beverage: kindOfBeverage,
-          complement: null,
+          complement: '',
           mainDish: {
-            bread: null,
-            protein: null,
+            bread: '',
+            protein: '',
             vegetables: [],
             extras: '',
           },
@@ -198,10 +198,10 @@ export default {
       if(this.orders[this.currentOrder]){
         if(this.orders[this.currentOrder].complement === kindOfComplement){
           if(this.orders[this.currentOrder].mainDish.protein === '' && this.orders[this.currentOrder].beverage === ''){
-            this.orders.splice(this.orders[this.currentOrder]);
+            this.orders.splice(this.orders[this.currentOrder], 1);
           }
             else {
-              this.orders[this.currentOrder].complement = null;
+              this.orders[this.currentOrder].complement = '';
               calculatePrice(this.orders[this.currentOrder]);
             }
         }
@@ -212,11 +212,11 @@ export default {
       }
       else {
         let order = {
-          beverage: null,
+          beverage: '',
           complement: kindOfComplement,
           mainDish: {
-            bread: null,
-            protein: null,
+            bread: '',
+            protein: '',
             vegetables: [],
             extras: '',
           },
@@ -237,7 +237,7 @@ export default {
         default:
           if(this.orders[this.currentOrder].mainDish.vegetables.includes(selectedVegetable)){
             let index = this.orders[this.currentOrder].mainDish.vegetables.indexOf(selectedVegetable)
-            this.orders[this.currentOrder].mainDish.vegetables.splice(index);
+            this.orders[this.currentOrder].mainDish.vegetables.splice(index, 1);
           }
           else {
             this.orders[this.currentOrder].mainDish.vegetables.push(selectedVegetable)

@@ -95,7 +95,7 @@ table {
 
   .tiket-libreta {
     margin: 2% -1% 0 0;
-    height: 45%;
+    height: 60%;
     position: absolute;
   }
 

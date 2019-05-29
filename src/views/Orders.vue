@@ -15,7 +15,7 @@
     <tr v-for="order in orders">
       <td>{{order.data().client}}</td>
       <td>{{order.data().orders}}</td>
-      <td>{{order.data().createdAt}}</td>
+      <td>{{order.data().createdAt.toDate()}}</td>
       <td>
         <button @click="deletOrder(order.id)">Borrar</button>
       </td>
@@ -64,9 +64,7 @@ export default {
   },
     deletOrder(doc){
       db.collection("orders").doc(doc).delete().then(() => {
-        // console.log("borrado");
       }).catch((err) => {
-        // console.log("error");
       });
       this.watcher();
     },
