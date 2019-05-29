@@ -139,10 +139,10 @@ export default {
       }
       else {
         let order = {
-          beverage: '',
-          complement: '',
+          beverage: null,
+          complement: null,
           mainDish: {
-            bread: '',
+            bread: null,
             protein: proteinToSet,
             vegetables: ['onion', 'tomato', 'lettuce', 'pepper'],
             extras: '',
@@ -181,10 +181,10 @@ export default {
       else {
         let order = {
           beverage: kindOfBeverage,
-          complement: '',
+          complement: null,
           mainDish: {
-            bread: '',
-            protein: '',
+            bread: null,
+            protein: null,
             vegetables: [],
             extras: '',
           },
@@ -212,11 +212,11 @@ export default {
       }
       else {
         let order = {
-          beverage: '',
+          beverage: null,
           complement: kindOfComplement,
           mainDish: {
-            bread: '',
-            protein: '',
+            bread: null,
+            protein: null,
             vegetables: [],
             extras: '',
           },
